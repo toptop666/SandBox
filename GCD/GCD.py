@@ -17,7 +17,7 @@ def main():
     
     print("Calculating GCD...")
     for _ in tqdm(range(steps), desc="Progress"):
-        time.sleep(0.1)  # Simulating some delay for progress visualization
+        #time.sleep(0.1)  # Simulating some delay for progress visualization
         # Calculate GCD in a loop to show progress
         gcd(a, b)
     
