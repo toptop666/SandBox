@@ -6,9 +6,10 @@ WORKDIR /app
 
 # Copy the GCD program into the container
 COPY GCD.py .
+COPY requirements.txt .
 
 # Install the required packages
-RUN pip install -r ../requirements.txt
+RUN pip install -r requirements.txt
 
 # Set the command to run the GCD program
 CMD ["python", "GCD.py"]
